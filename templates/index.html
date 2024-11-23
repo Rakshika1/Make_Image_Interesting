@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processor</title>
+</head>
+<body>
+    <h1>Choose an Effect and Upload Your Image</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <select name="effect" required>
+            <option value="cartoon">Cartoon Effect</option>
+            <option value="warp">Warp Effect</option>
+            <option value="grayscale">Grayscale Effect</option>
+        </select>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
